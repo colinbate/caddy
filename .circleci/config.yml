@@ -20,8 +20,6 @@ jobs:
       - run: go get -v -d ./...
       - run: go get -v -d github.com/caddyserver/builds
       - run: cd caddy && go run build.go -goarch=amd64 -goos=windows
-      - run: ls -lA
-      - run: cd caddy && ls -lA
 
-      # - store_artifacts:
-      #     path: /go/src/github.com/mholt/caddy/caddy 
+      - store_artifacts:
+          path: /go/src/github.com/mholt/caddy/caddy/caddy.exe
