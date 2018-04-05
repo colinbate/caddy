@@ -18,8 +18,4 @@ jobs:
 
       # specify any bash command here prefixed with `run: `
       - run: go get -v -d ./...
-      - run: pwd
-      - run: cd caddy
-      - run: pwd
-      - run: ls -lA
-      - run: go run build.go -goarch=amd64 -goos=windows
+      - run: cd caddy && go run build.go -goarch=amd64 -goos=windows
