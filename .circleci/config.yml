@@ -19,4 +19,6 @@ jobs:
       # specify any bash command here prefixed with `run: `
       - run: go get -v -t -d ./...
       - run: cd caddy
+      - run: pwd
+      - run: ls -lA
       - run: go run build.go -goarch=amd64 -goos=windows
